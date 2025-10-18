@@ -5,7 +5,6 @@ from mysql.connector import Error
 DB_HOST = "localhost"
 DB_USER = "root"
 DB_PASSWORD = "root"  # Use 'password', not 'passwd'
-DATABASE_NAME = "alx_book_store"
 
 
 def create_database():
@@ -21,8 +20,8 @@ def create_database():
 
         if db.is_connected():
             mycursor = db.cursor()
-            mycursor.execute(f"CREATE DATABASE IF NOT EXISTS {DATABASE_NAME}")
-            print(f"Database '{DATABASE_NAME}' created successfully!")
+            mycursor.execute(f"CREATE DATABASE IF NOT EXISTS alx_book_store")
+            print(f"Database 'alx_book_store' created successfully!")
             mycursor.close()
             db.close()
         else:
