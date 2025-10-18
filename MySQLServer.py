@@ -8,7 +8,7 @@ db = mysql.connector.connect(
 
 mycursor = db.cursor()
 
-mycursor.execute('create database alx_book_store')
+mycursor.execute('CREATE DATABASE IF NOT EXISTS alx_book_store')
 
 mycursor.close()
 db.close()
