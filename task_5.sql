@@ -5,8 +5,4 @@ INSERT INTO customer (
         address
     )
 VALUES (
-        1,
-        cole baidoo,
-        cbaidoo @sandtech.com,
-        123 Happiness Ave
-    )
+        1, "cole baidoo", "cbaidoo @sandtech.com", "123 Happiness Ave" )
