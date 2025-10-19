@@ -1,4 +1,4 @@
-insert into
+INSERT INTO
     customer (
         customer_id,
         customer_name,
